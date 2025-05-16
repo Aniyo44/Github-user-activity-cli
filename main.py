@@ -1,4 +1,5 @@
 import requests
+import json 
 
 def describe_event(event):
     type_ = event['type']
@@ -40,6 +41,7 @@ def main():
         return
 
     events = response.json()
+
 
     print("\nRecent GitHub Activity:")
     for event in events:
